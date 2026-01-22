@@ -1,0 +1,21 @@
+2026/01/12-10:14:56.497 26c8 Reusing MANIFEST /home/raoulkalkman/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/01/12-10:14:56.498 26c8 Recovering log #22
+2026/01/12-10:14:56.523 26c8 Reusing old log /home/raoulkalkman/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000022.log 
+2026/01/12-10:21:08.733 26c9 Level-0 table #27: started
+2026/01/12-10:21:08.760 26c9 Level-0 table #27: 1288415 bytes OK
+2026/01/12-10:21:08.763 26c9 Delete type=0 #22
+2026/01/12-10:25:37.125 26c9 Compacting 1@1 + 1@2 files
+2026/01/12-10:25:37.145 26c9 Generated table #28@1: 1498 keys, 400279 bytes
+2026/01/12-10:25:37.145 26c9 Compacted 1@1 + 1@2 files => 400279 bytes
+2026/01/12-10:25:37.147 26c9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/01/12-10:25:37.147 26c9 Delete type=2 #27
+2026/01/12-10:25:37.147 26c9 Delete type=2 #24
+2026/01/12-10:44:59.177 26c9 Level-0 table #30: started
+2026/01/12-10:44:59.190 26c9 Level-0 table #30: 1817990 bytes OK
+2026/01/12-10:44:59.191 26c9 Delete type=0 #26
+2026/01/12-10:49:41.176 275a Compacting 1@1 + 1@2 files
+2026/01/12-10:49:41.194 275a Generated table #31@1: 1687 keys, 669370 bytes
+2026/01/12-10:49:41.194 275a Compacted 1@1 + 1@2 files => 669370 bytes
+2026/01/12-10:49:41.195 275a compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/01/12-10:49:41.196 275a Delete type=2 #30
+2026/01/12-10:49:41.196 275a Delete type=2 #28

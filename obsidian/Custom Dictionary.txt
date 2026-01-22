@@ -1,0 +1,15 @@
+Acceptor
+Acceptors
+Automata
+DFS
+EV
+EVSE
+OSI
+Paragaaf
+Pushdown
+acceptor
+acceptors
+combinational
+iff
+nonaccepting
+checksum_v1 = da5de425dd76bfda16517fc2cda53c62

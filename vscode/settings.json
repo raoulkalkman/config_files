@@ -1,0 +1,301 @@
+{
+  // ============================================================================
+  // WORKBENCH & UI SETTINGS
+  // ============================================================================
+  "workbench.colorTheme": "Monokai",
+  "workbench.startupEditor": "none",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.png": "imagePreview.previewEditor",
+  },
+  // ============================================================================
+  // EDITOR SETTINGS
+  // ============================================================================
+  "editor.bracketPairColorization.enabled": true,
+  "editor.aiStats.enabled": true,
+  "editor.autoIndentOnPaste": true,
+  "editor.minimap.enabled": false,
+  "editor.codeActions.triggerOnFocusChange": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+
+  // ============================================================================
+  // FILE & EXPLORER SETTINGS
+  // ============================================================================
+  "files.autoSave": "onFocusChange",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.excludeGitIgnore": true,
+  // ============================================================================
+  // LANGUAGE-SPECIFIC SETTINGS
+  // ============================================================================
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "always",
+    },
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+    },
+  },
+  "[c]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+    },
+  },
+  "[plaintext]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+  },
+  // ============================================================================
+  // GIT & VERSION CONTROL
+  // ============================================================================
+  "git.openRepositoryInParentFolders": "always",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "git.blame.statusBarItem.template": "${subject} | ${authorName} (${authorDateAgo})",
+  "github.gitProtocol": "ssh",
+  // ============================================================================
+  // GITHUB COPILOT
+  // ============================================================================
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "txt": false,
+    "yaml": false,
+    "Log": false,
+    "ignore": false,
+    "settings.json": false,
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  // ============================================================================
+  // C/C++ LANGUAGE SUPPORT
+  // ============================================================================
+  "c_Cpp.intelliSenseEngine": "Disabled",
+  "clangd.path": "/usr/bin/clangd",
+  "clangd.arguments": [
+    "--header-insertion=iwyu",
+    "--clang-tidy",
+    "--completion-style=detailed",
+  ],
+  "clangd.onSave": true,
+  "clangd.formatOnSave": true,
+  // ============================================================================
+  // SPELL CHECK & LANGUAGE
+  // ============================================================================
+  "cSpell.language": "en,en-US,en-GB",
+  "cSpell.userWords": [
+    "aiofile",
+    "BOOTLOADER",
+    "datapoints",
+    "evcc",
+    "evse",
+    "initalisation",
+    "Initialise",
+    "josev",
+    "Kalkman",
+    "precharge",
+    "pydantic",
+    "pyserial",
+    "slac",
+    "Statemachine",
+  ],
+  "cSpell.ignoreWords": ["Zdpgqogq"],
+  // ============================================================================
+  // PYTHON LANGUAGE SUPPORT
+  // ============================================================================
+  "python.analysis.typeCheckingMode": "strict",
+  // ============================================================================
+  // BUILD TOOLS & CMAKE
+  // ============================================================================
+  "cmake.configureOnOpen": true,
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask",
+  ],
+  "makefile.configureOnOpen": true,
+  // ============================================================================
+  // DEBUGGERS & DEV TOOLS
+  // ============================================================================
+  "lldb.suppressUpdateNotifications": true,
+  // ============================================================================
+  // BETTER COMMENTS
+  // ============================================================================
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "issue",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "problem",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "info",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "-",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "Todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "TODO",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "note",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "NOTE",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "Fixme",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "fixme",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "FIXME",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+  ],
+  // ============================================================================
+  // OTHER EXTENSIONS
+  // ============================================================================
+  "update.showReleaseNotes": true,
+  "workbench.iconTheme": "Monokai Pro Light Icons",
+  "settingsSync.ignoredExtensions": [],
+}

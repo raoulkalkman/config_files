@@ -1,0 +1,329 @@
+{
+  // ============================================================================
+  // LEIDEN UNIVERSITY PROFILE - C++17, Clang toolchain, python strict
+  // ============================================================================
+
+  // ============================================================================
+  // WORKBENCH & UI SETTINGS
+  // ============================================================================
+  "workbench.startupEditor": "none",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "bongocat",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.png": "imagePreview.previewEditor",
+  },
+
+  // ============================================================================
+  // EDITOR SETTINGS
+  // ============================================================================
+  "editor.bracketPairColorization.enabled": true,
+  "editor.aiStats.enabled": true,
+  "editor.autoIndentOnPaste": true,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // ============================================================================
+  // FILE & EXPLORER SETTINGS
+  // ============================================================================
+  "files.autoSave": "onFocusChange",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.excludeGitIgnore": true,
+  // ============================================================================
+  // LANGUAGE-SPECIFIC SETTINGS
+  // ============================================================================
+  "[python]": {
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "editor.suggest.insertMode": "replace",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.sortIncludes": "explicit",
+      "source.organizeIncludes": "explicit",
+    },
+  },
+  "[c]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.sortIncludes": "explicit",
+      "source.organizeIncludes": "explicit",
+    },
+  },
+  "[plaintext]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+  },
+
+  // ============================================================================
+  // GIT & VERSION CONTROL
+  // ============================================================================
+  "git.openRepositoryInParentFolders": "always",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "git.blame.statusBarItem.template": "${subject} | ${authorName} (${authorDateAgo})",
+  "github.gitProtocol": "ssh",
+
+  // ============================================================================
+  // GITHUB COPILOT
+  // ============================================================================
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "txt": false,
+    "yaml": false,
+    "Log": false,
+    "ignore": false,
+    "settings.json": false,
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // ============================================================================
+  // C/C++ LANGUAGE SUPPORT - CLANG TOOLCHAIN
+  // ============================================================================
+  "C_Cpp.debugShortcut": true,
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.includePath": ["/usr/local", "/usr/include/**"],
+  "C_Cpp.default.compilerArgs": [
+    "-O2",
+    "-fanalyzer",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-Wall",
+    "-Weffc++",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wvla",
+    "-Wextra-semi",
+    "-Wnull-dereference",
+    "-Wswitch-enum",
+    "-Wconversion",
+    "-Wsign-conversion",
+    "-Wold-style-cast",
+    "-Wcast-align",
+    "-Wunused",
+    "-Wcast-qual",
+    "-Wformat=2",
+    "-Wduplicated-cond",
+    "-Wduplicated-branches",
+    "-Wlogical-op",
+    "-Wundef",
+    "-Wdouble-promotion",
+  ],
+  "C_Cpp.default.browse.path": [],
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+  "clangd.path": "/home/raoulkalkman/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.8/clangd_21.1.8/bin/clangd",
+  "clangd.arguments": [
+    "--header-insertion=iwyu",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--background-index",
+    "--all-scopes-completion",
+    "--pch-storage=memory",
+    "--limit-results=100",
+    "--log=error",
+  ],
+  "clangd.onSave": true,
+  "clangd.formatOnSave": true,
+  // ============================================================================
+  // PYTHON LANGUAGE SUPPORT
+  // ============================================================================
+  "python.analysis.typeCheckingMode": "strict",
+
+  // ============================================================================
+  // BUILD TOOLS & CMAKE
+  // ============================================================================
+  "cmake.configureOnOpen": true,
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask",
+  ],
+  "makefile.configureOnOpen": true,
+
+  // ============================================================================
+  // DEBUGGERS & DEV TOOLS
+  // ============================================================================
+  "lldb.suppressUpdateNotifications": true,
+
+  // ============================================================================
+  // BETTER COMMENTS & EVEN BETTER COMMENTS
+  // ============================================================================
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "issue",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "problem",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "info",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "-",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "Todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "TODO",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "note",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "NOTE",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+    {
+      "tag": "Fixme",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "fixme",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false,
+    },
+    {
+      "tag": "FIXME",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false,
+    },
+  ],
+  "todohighlight.enableDiagnostics": true,
+  "C_Cpp.intelliSenseEngine": "disabled",
+}
