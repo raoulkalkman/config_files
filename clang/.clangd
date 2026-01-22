@@ -1,0 +1,12 @@
+CompileFlags:
+  CompilationDatabase: build
+  Remove: [-m*, -f*] # Remove gcc-specific flags
+
+Diagnostics:
+  UnusedIncludes: Strict # Show warnings about unused includes
+  MissingIncludes: Strict # Show warnings about missing includes
+  ClangTidy:
+    FastCheckFilter: None # Run all clang-tidy checks, even ones that are slow
+
+Hover:
+  ShowAKA: true # Show desugared type names in hover tooltips
